@@ -1,4 +1,5 @@
 import React from "react";
+import Home from "./Home"
 import {
   Switch,
   Route,
@@ -8,7 +9,7 @@ import {
 function App() {
   return (
     <div className="App">
-      <h1>hello</h1>
+      <Home />
     </div>
   );
 }
