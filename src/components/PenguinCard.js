@@ -6,7 +6,7 @@ function PenguinCard({ name, desc, img, likes }) {
             <h2>{name}</h2>
             <img className="cardImage" src={img}/>
             <p>Liked: {likes} times!</p>
-            <button>&#x1F60D;</button>
+            <button>&#x1F60D; Like!</button>
         </div>
     );
 }

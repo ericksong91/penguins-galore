@@ -1,6 +1,6 @@
 .penguins {
   text-align: center;
-  color:rgb(94, 76, 76)
+  color:rgb(94, 76, 76);
 }
 
 .penguins-logo {
@@ -24,9 +24,8 @@
 }
 
 .card {
-  background-color: rgba(33, 237, 255, 0.351);
+  background-color: rgba(187, 97, 24, 0.351);
   width: 20em;
-  height: 33em;
   display: inline-grid;
   margin: 0.3rem;
   justify-items: center;

@@ -11,7 +11,6 @@ import {
 function App() {
   return (
     <div className="App">
-      <Navbar />
       <Routes>
         <Route path="/" element={
           <h1>Homepage!</h1>
