@@ -11,7 +11,7 @@ function NewPenguin() {
             "name": name,
             "desc": desc,
             "image": img,
-            "likes": 0
+            "liked": false
         }
 
         console.log(newPenguin)

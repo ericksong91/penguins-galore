@@ -16,7 +16,7 @@ function PenguinList() {
     }, [])
 
     const penguinList = penguins.map((pen) => {
-        return <PenguinCard key={pen.id} name={pen.name} desc={pen.desc} img={pen.image} likes={pen.likes} />
+        return <PenguinCard key={pen.id} id={pen.id} name={pen.name} desc={pen.desc} img={pen.image} likes={pen.likes} />
     })
 
     function handleShow () {
