@@ -6,32 +6,34 @@ function NewPenguin() {
     const [desc, setDesc] = useState("");
     const [img, setImg] = useState("");
 
+    function handleSubmit(e) {
+        e.preventDefault();
+        console.log(e)
+    }
 
     return (
         <div className="penguinsNew">
-            <h2>Penguins New Form</h2>
-            <Form onSubmit={() => { console.log("You Submitted!") }}>
+            <Form onSubmit={(e) => { handleSubmit(e) }}>
                 <Form.Group widths="equal">
-                    <Form.Input fluid label="Name" placeholder="Name"
+                    <Form.Input className="name" placeholder="Name..."
                         name="name" value={name} onChange={(e) => {
                             console.log(e.target.value)
                             setName(e.target.value)
-                            }} />
-                    <Form.Input fluid label="Description" placeholder="Description"
+                        }} />
+                    <Form.TextArea className="desc" placeholder="Description..."
                         name="desc" value={desc} onChange={(e) => {
                             console.log(e.target.value)
                             setDesc(e.target.value)
-                            }} />
+                        }} />
                     <Form.Input
-                        fluid
-                        label="Image URL"
-                        placeholder="url"
+                        className="image"
+                        placeholder="Image URL..."
                         name="img"
                         value={img}
                         onChange={(e) => {
                             console.log(e.target.value)
                             setImg(e.target.value)
-                            }}
+                        }}
                     />
                 </Form.Group>
                 <Form.Button>Submit</Form.Button>

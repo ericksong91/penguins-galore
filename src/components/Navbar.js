@@ -6,13 +6,13 @@ import {
 function Navbar() {
     return (
         <div className="Navbar">
-            <h1>Navigation</h1>
-            <nav style={{ margin: 10 }}>
+            <h3>Navigation</h3>
+            <nav className="Links">
                 <Link to="/" style={{ padding: 5 }}>
                     Home
                 </Link>
                 <Link to="/penguins" style={{ padding: 5 }}>
-                    View Penguins
+                    Penguins
                 </Link>
                 <Link to="/about" style={{ padding: 5 }}>
                     About
