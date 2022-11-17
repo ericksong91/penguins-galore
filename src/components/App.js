@@ -1,6 +1,6 @@
 import React from "react";
 import "../App.css";
-import Navbar from "./Navbar";
+import Homepage from "./Homepage";
 import PenguinList from "./PenguinsList";
 import About from "./About";
 import {
@@ -12,9 +12,7 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={
-          <h1>Homepage!</h1>
-        } />
+        <Route path="/" element={<Homepage />} />
         <Route path="/penguins" element={<PenguinList />} />
         <Route path="/about" element={<About />} />
       </Routes>
