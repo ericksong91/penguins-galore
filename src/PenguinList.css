@@ -41,6 +41,10 @@ button {
   margin: 0.3rem;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .card:hover {
   background-color:rgba(83, 255, 235, 0.436) ;
 }

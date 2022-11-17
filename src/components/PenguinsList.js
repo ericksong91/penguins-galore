@@ -16,15 +16,21 @@ function PenguinList() {
     }, [])
 
     const penguinList = penguins.map((pen) => {
-        return <PenguinCard key={pen.id} id={pen.id} name={pen.name} desc={pen.desc} img={pen.image} likes={pen.likes} />
+        return <PenguinCard key={pen.id} id={pen.id} name={pen.name}
+            desc={pen.desc} img={pen.image}
+            liked={pen.liked} setLikes={handleLikes} />
     })
 
-    function handleShow () {
-        if(newPeng === false){
+    function handleShow() {
+        if (newPeng === false) {
             setNewPeng(true)
         } else {
             setNewPeng(false)
         }
+    }
+
+    function handleLikes(id) {
+        console.log(id)
     }
 
     return (
