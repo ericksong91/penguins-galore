@@ -31,7 +31,7 @@ function PenguinList() {
         <div className="penguins">
             {newPeng ? <NewPenguin /> : null}
             <button onClick={handleShow}>{newPeng ? "Hide" : "Add New Penguins!"}</button>
-            <h1>Penguins Galore!</h1>
+            <br />
             {penguinList}
         </div>
     );
