@@ -23,3 +23,33 @@
   color: #61dafb;
 }
 
+.card {
+  background-color: rgba(33, 237, 255, 0.351);
+  width: 20em;
+  height: 33em;
+  display: inline-grid;
+  margin: 0.3rem;
+  justify-items: center;
+  position:relative;
+  border-radius: 20px;
+  transition-property:background-color;
+  transition-duration:0.5s;
+  animation: append-animate .5s linear;
+}
+
+button {
+  border-radius: 5px;
+  margin: 0.3rem;
+}
+
+.card:hover {
+  background-color:rgba(83, 255, 235, 0.436) ;
+}
+
+.cardImage {
+  height: 20rem;
+  width: 13rem;
+  border-radius: 20px;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
