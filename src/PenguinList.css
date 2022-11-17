@@ -1,0 +1,25 @@
+.penguins {
+  text-align: center;
+  color:rgb(94, 76, 76)
+}
+
+.penguins-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.penguins-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.penguins-link {
+  color: #61dafb;
+}
+

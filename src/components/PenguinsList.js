@@ -1,4 +1,5 @@
 import { React, useEffect, useState } from "react";
+import "../PenguinList.css"
 import PenguinCard from "./PenguinCard";
 import PenguinPage from "./PenguinPage";
 import NewPenguin from "./NewPenguin";
@@ -6,6 +7,7 @@ import NewPenguin from "./NewPenguin";
 function PenguinList() {
 
     const [penguins, setPenguins] = useState([]);
+    const [newPeng, setNewPeng] = useState(true);
 
     useEffect(() => {
         fetch("http://localhost:3001/penguins")
@@ -19,9 +21,9 @@ function PenguinList() {
 
     return (
         <div className="penguins">
-            <NewPenguin />
-        
-            <h2>Penguins Here:</h2>
+            {newPeng ? <NewPenguin /> : null}
+            <button>Add Penguin</button>
+            <h1>Penguins Galore!</h1>
             {penguinList}
         </div>
     );
