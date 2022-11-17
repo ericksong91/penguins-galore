@@ -12,7 +12,7 @@ function Navbar() {
                     Home
                 </Link>
                 <Link to="/penguins" style={{ padding: 5 }}>
-                    Penguins
+                    View Penguins
                 </Link>
                 <Link to="/about" style={{ padding: 5 }}>
                     About

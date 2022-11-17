@@ -1,6 +1,10 @@
 import { React, useEffect, useState } from "react";
 import PenguinCard from "./PenguinCard";
 import PenguinPage from "./PenguinPage";
+import NewPenguin from "./NewPenguin";
+import {
+    Link
+} from "react-router-dom"
 
 function PenguinList() {
 
@@ -18,6 +22,7 @@ function PenguinList() {
 
     return (
         <div className="penguins">
+            
             <h2>Penguins Here:</h2>
             {penguinList}
         </div>
