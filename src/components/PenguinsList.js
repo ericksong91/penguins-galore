@@ -7,7 +7,7 @@ import NewPenguin from "./NewPenguin";
 function PenguinList() {
 
     const [penguins, setPenguins] = useState([]);
-    const [newPeng, setNewPeng] = useState(true);
+    const [newPeng, setNewPeng] = useState(false);
 
     useEffect(() => {
         fetch("http://localhost:3001/penguins")
@@ -19,10 +19,18 @@ function PenguinList() {
         return <PenguinCard key={pen.id} name={pen.name} desc={pen.desc} img={pen.image} likes={pen.likes} />
     })
 
+    function handleShow () {
+        if(newPeng === false){
+            setNewPeng(true)
+        } else {
+            setNewPeng(false)
+        }
+    }
+
     return (
         <div className="penguins">
             {newPeng ? <NewPenguin /> : null}
-            <button>Add Penguin</button>
+            <button onClick={handleShow}>{newPeng ? "Hide" : "Add New Penguins!"}</button>
             <h1>Penguins Galore!</h1>
             {penguinList}
         </div>

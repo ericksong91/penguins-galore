@@ -42,7 +42,7 @@ function NewPenguin() {
                         }}
                     />
                 </Form.Group>
-                <Form.Button>Add Penguin</Form.Button>
+                <Form.Button>Submit</Form.Button>
             </Form>
         </div>
     );
