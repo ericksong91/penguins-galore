@@ -6,9 +6,15 @@ function NewPenguin() {
     const [desc, setDesc] = useState("");
     const [img, setImg] = useState("");
 
-    function handleSubmit(e) {
-        e.preventDefault();
-        console.log(e)
+    function handleSubmit() {
+        const newPenguin = {
+            "name": name,
+            "desc": desc,
+            "image": img,
+            "likes": 0
+        }
+
+        console.log(newPenguin)
     }
 
     return (
@@ -36,7 +42,7 @@ function NewPenguin() {
                         }}
                     />
                 </Form.Group>
-                <Form.Button>Submit</Form.Button>
+                <Form.Button>Add Penguin</Form.Button>
             </Form>
         </div>
     );
