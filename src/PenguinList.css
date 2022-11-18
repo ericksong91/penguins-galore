@@ -46,7 +46,8 @@ button:hover {
 }
 
 .card:hover {
-  background-color:rgba(83, 255, 235, 0.436) ;
+  background-color:rgba(83, 255, 235, 0.436);
+  cursor: pointer;
 }
 
 .cardImage {
