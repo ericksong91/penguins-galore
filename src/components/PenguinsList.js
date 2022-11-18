@@ -33,9 +33,14 @@ function PenguinList() {
         console.log(id)
     }
 
+    function handleSubmit(newPenguin) {
+        console.log("Submitting new Pokemon....")
+        setPenguins([...penguins, newPenguin])
+    }
+
     return (
         <div className="penguins">
-            {newPeng ? <NewPenguin /> : null}
+            {newPeng ? <NewPenguin onSubmit={handleSubmit} /> : null}
             <button onClick={handleShow}>{newPeng ? "Hide" : "Add New Penguins!"}</button>
             <br />
             {penguinList}

@@ -1,7 +1,7 @@
 import { React, useState } from "react";
 import { Form } from "semantic-ui-react";
 
-function NewPenguin() {
+function NewPenguin({ onSubmit }) {
     const [name, setName] = useState("");
     const [desc, setDesc] = useState("");
     const [img, setImg] = useState("");
@@ -15,6 +15,21 @@ function NewPenguin() {
         }
 
         console.log(newPenguin)
+
+        fetch("http://localhost:3001/penguins", {
+            method: "POST",
+            headers: {
+                "Content-type": "application/json",
+            },
+            body: JSON.stringify(newPenguin),
+        })
+            .then((r) => r.json())
+            .then(() => {
+                setName("");
+                setDesc("");
+                setImg("");
+                onSubmit(newPenguin);
+            })
     }
 
     return (
