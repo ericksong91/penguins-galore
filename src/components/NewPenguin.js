@@ -5,12 +5,14 @@ function NewPenguin({ onSubmit }) {
     const [name, setName] = useState("");
     const [desc, setDesc] = useState("");
     const [img, setImg] = useState("");
+    const [sciName, setSciName] = useState("");
 
     function handleSubmit() {
         const newPenguin = {
             "name": name,
             "desc": desc,
             "image": img,
+            "sciName": sciName,
             "liked": false
         }
 
@@ -28,9 +30,10 @@ function NewPenguin({ onSubmit }) {
                 setName("");
                 setDesc("");
                 setImg("");
+                setSciName("");
                 onSubmit(newPenguin);
             })
-            .catch(()=>alert("Error updating new Penguin!"))
+            .catch(() => alert("Error updating new Penguin!"))
     }
 
     return (
@@ -41,6 +44,11 @@ function NewPenguin({ onSubmit }) {
                         name="name" value={name} onChange={(e) => {
                             console.log(e.target.value)
                             setName(e.target.value)
+                        }} />
+                    <Form.Input className="sciname" placeholder="Latin/Scientific Name..."
+                        name="sciname" value={sciName} onChange={(e) => {
+                            console.log(e.target.value)
+                            setSciName(e.target.value)
                         }} />
                     <Form.TextArea className="desc" placeholder="Description..."
                         name="desc" value={desc} maxLength={200} onChange={(e) => {

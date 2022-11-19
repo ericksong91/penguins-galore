@@ -6,7 +6,7 @@ function PenguinPage({ penguins, onLiked }) {
 
     console.log(penguins[index])
 
-    const { image, name, desc, liked, id } = penguins[index]
+    const { image, name, desc, liked, sciName, id } = penguins[index]
 
     function handleLikes() {
         fetch(`http://localhost:3001/penguins/${id}`, {
@@ -26,6 +26,7 @@ function PenguinPage({ penguins, onLiked }) {
     return (
         <div className="penguins">
             <h2>{name}</h2>
+            <h3>{sciName}</h3>
             <img src={image}></img>
             <p>{desc}</p>
             <button onClick={() => handleLikes()} className={liked ? "like" : null}>{liked ? "Liked! 😊" : "Like? 😀"}</button>
