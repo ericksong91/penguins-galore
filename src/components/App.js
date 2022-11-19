@@ -1,5 +1,6 @@
 import { React, useEffect, useState } from "react";
-import "../App.css";
+import "../css/App.css";
+import "../css/PenguinList.css"
 import Homepage from "./Homepage";
 import PenguinList from "./PenguinsList";
 import PenguinPage from "./PenguinPage";

@@ -1,5 +1,4 @@
 import { React, useState } from "react";
-import "../PenguinList.css"
 import PenguinCard from "./PenguinCard";
 import NewPenguin from "./NewPenguin";
 

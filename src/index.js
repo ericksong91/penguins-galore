@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './css/index.css';
 import App from './components/App';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
+import Credits from './components/Credits';
 import reportWebVitals from './reportWebVitals';
 import {
   BrowserRouter as Router, Routes,
@@ -16,6 +17,7 @@ root.render(
       <Header />
       <Navbar />
       <App />
+      <Credits />
     </Router>
   </React.StrictMode>
 );

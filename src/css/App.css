@@ -34,6 +34,16 @@
   margin:auto;
 }
 
+.credits {
+  background-color:#d5ddce;
+  text-align: center;
+  color:rgb(94, 76, 76);
+  width: 90em;
+  position:relative;
+  border-radius: 20px;
+  margin:auto;
+}
+
 /* .Links {
   background-color: rgba(33, 237, 255, 0.351);
   width: 1em;
