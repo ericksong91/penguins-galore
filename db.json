@@ -6,7 +6,7 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Aptenodytes_forsteri_-Snow_Hill_Island%2C_Antarctica_-adults_and_juvenile-8.jpg",
       "desc": "The emperor penguin is the tallest and heaviest of all living penguin species and is endemic to Antarctica.",
       "sciName": "Aptenodytes forsteri",
-      "liked": false
+      "liked": true
     },
     {
       "id": 2,
@@ -14,13 +14,13 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Hope_Bay-2016-Trinity_Peninsula%E2%80%93Ad%C3%A9lie_penguin_%28Pygoscelis_adeliae%29_04.jpg/800px-Hope_Bay-2016-Trinity_Peninsula%E2%80%93Ad%C3%A9lie_penguin_%28Pygoscelis_adeliae%29_04.jpg",
       "desc": "The Adélie penguin is a species of penguin common along the entire coast of the Antarctic continent, which is the only place where it is found.",
       "sciName": "Pygoscelis adeliae",
-      "liked": false
+      "liked": true
     },
     {
       "id": 3,
       "name": "Australian Little Penguin",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Eudyptula_minor_Bruny_1.jpg/800px-Eudyptula_minor_Bruny_1.jpg",
-      "desc": "The Australian little penguin, also called the fairy penguin, is a species of penguin from Australia and the Otago region of New Zealand",
+      "desc": "The Australian little penguin, also called the fairy penguin, is a species of penguin from Australia and the Otago region of New Zealand.",
       "sciName": "Eudyptula novaehollandiae",
       "liked": false
     },
@@ -44,7 +44,7 @@
       "id": 6,
       "name": "Erect-crested Penguin",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Erect-crested_penguin_%28Eudyptes_sclateri%29.jpg/800px-Erect-crested_penguin_%28Eudyptes_sclateri%29.jpg",
-      "desc": "The erect-crested penguin is a penguin endemic to the New Zealand region",
+      "desc": "The erect-crested penguin is a penguin endemic to the New Zealand region.",
       "sciName": "Eudyptes sclateri",
       "liked": false
     },

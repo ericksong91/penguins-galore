@@ -3,9 +3,6 @@ import { Link, useParams } from "react-router-dom"
 
 function PenguinPage({ penguins, onLiked }) {
     const index = parseInt(useParams().id) - 1;
-
-    console.log(penguins[index])
-
     const { image, name, desc, liked, sciName, id } = penguins[index]
 
     function handleLikes() {
@@ -25,10 +22,10 @@ function PenguinPage({ penguins, onLiked }) {
 
     return (
         <div className="penguins">
-            <h2>{name}</h2>
-            <h3>{sciName}</h3>
-            <img src={image}></img>
-            <p>{desc}</p>
+            <h2 className="pageName">{name}</h2>
+            <h3 className="pageSci">{sciName}</h3>
+            <div className="pageCard"><Link to="/penguins"><img src={image} className="pageImg"></img></Link></div>
+            <p className="desc">{desc}</p>
             <button onClick={() => handleLikes()} className={liked ? "like" : null}>{liked ? "Liked! 😊" : "Like? 😀"}</button>
             <Link to="/penguins"><button>Return to Penguins</button></Link>
         </div>

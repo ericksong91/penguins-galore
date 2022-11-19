@@ -63,10 +63,6 @@ button:hover {
   background-color: rgba(172, 32, 32, 0.737);
 }
 
-.penguinsNew {
-  justify-items: left;
-}
-
 .addPenguin {
   background-color: rgb(240, 169, 131);
   color: white;
@@ -84,4 +80,37 @@ button:hover {
 
 .addPenguin:hover {
   background-color: rgb(225, 147, 170);
+}
+
+.pageCard {
+  background-color: rgba(187, 97, 24, 0.351);
+  width: 25em;
+  height: 35em;
+  display: inline-grid;
+  margin: 0.5rem;
+  justify-items: center;
+  position:relative;
+  border-radius: 20px;
+  opacity: 1;
+  transition-property:all;
+  transition-duration:0.5s;
+  animation: append-animate .5s linear;
+}
+
+.pageImg {
+  width:20em;
+  height: 30em;
+  margin-top:2.5em;
+  border-radius: 2em;
+}
+
+.desc {
+  word-wrap: normal;
+  margin-left: 10em;
+  margin-right: 10em;
+}
+
+h2.pageName {
+  font-size: xx-large;
+  padding-top: .75em;
 }

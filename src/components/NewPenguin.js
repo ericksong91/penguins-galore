@@ -40,7 +40,7 @@ function NewPenguin({ onSubmit }) {
         <div className="penguinsNew">
             <Form onSubmit={(e) => { handleSubmit(e) }}>
                 <Form.Group widths="equal">
-                    <Form.Input className="name" placeholder="Name..."
+                    <Form.Input className="name" placeholder="Penguin Name..."
                         name="name" value={name} onChange={(e) => {
                             console.log(e.target.value)
                             setName(e.target.value)
@@ -50,14 +50,14 @@ function NewPenguin({ onSubmit }) {
                             console.log(e.target.value)
                             setSciName(e.target.value)
                         }} />
-                    <Form.TextArea className="desc" placeholder="Description..."
+                    <Form.TextArea className="desc" placeholder="Description of Penguin..."
                         name="desc" value={desc} maxLength={200} onChange={(e) => {
                             console.log(e.target.value)
                             setDesc(e.target.value)
                         }} />
                     <Form.Input
                         className="image"
-                        placeholder="Image URL..."
+                        placeholder="Image URL of Penguin..."
                         name="img"
                         value={img}
                         onChange={(e) => {

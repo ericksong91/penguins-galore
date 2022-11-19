@@ -29,8 +29,6 @@ function App() {
   }
 
   function handleLikes(likedPenguin) {
-    console.log(likedPenguin)
-
     const updatedPenguins = penguins.map((peng) => {
       if (peng.id === likedPenguin.id) {
         return likedPenguin;
