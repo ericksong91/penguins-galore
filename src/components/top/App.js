@@ -1,10 +1,10 @@
 import { React, useEffect, useState } from "react";
-import "../css/App.css";
-import "../css/PenguinList.css"
-import Homepage from "./Homepage";
-import PenguinList from "./PenguinsList";
-import PenguinPage from "./PenguinPage";
-import About from "./About";
+import "../../css/App.css";
+import "../../css/PenguinList.css"
+import Homepage from "../Homepage";
+import PenguinList from "../PenguinsList";
+import PenguinPage from "../PenguinPage";
+import About from "../About";
 import {
   Routes,
   Route,

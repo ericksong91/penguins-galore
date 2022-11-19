@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './css/index.css';
-import App from './components/App';
-import Header from './components/Header';
-import Navbar from './components/Navbar';
-import Credits from './components/Credits';
+import App from './components/top/App';
+import Header from './components/top/Header';
+import Navbar from './components/top/Navbar';
+import Credits from './components/top/Credits';
 import reportWebVitals from './reportWebVitals';
 import {
   BrowserRouter as Router, Routes,
