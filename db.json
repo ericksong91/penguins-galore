@@ -12,7 +12,7 @@
       "name": "Adélie Penguin",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Hope_Bay-2016-Trinity_Peninsula%E2%80%93Ad%C3%A9lie_penguin_%28Pygoscelis_adeliae%29_04.jpg/800px-Hope_Bay-2016-Trinity_Peninsula%E2%80%93Ad%C3%A9lie_penguin_%28Pygoscelis_adeliae%29_04.jpg",
       "desc": "The Adélie penguin is a species of penguin common along the entire coast of the Antarctic continent, which is the only place where it is found.",
-      "liked": true
+      "liked": false
     },
     {
       "id": 3,
@@ -41,13 +41,6 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Erect-crested_penguin_%28Eudyptes_sclateri%29.jpg/800px-Erect-crested_penguin_%28Eudyptes_sclateri%29.jpg",
       "desc": "The erect-crested penguin is a penguin endemic to the New Zealand region",
       "liked": false
-    },
-    {
-      "name": "Hello",
-      "desc": "adsfliajiosdfjiaosdf",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Hope_Bay-2016-Trinity_Peninsula%E2%80%93Ad%C3%A9lie_penguin_%28Pygoscelis_adeliae%29_04.jpg/800px-Hope_Bay-2016-Trinity_Peninsula%E2%80%93Ad%C3%A9lie_penguin_%28Pygoscelis_adeliae%29_04.jpg",
-      "liked": false,
-      "id": 7
     }
   ]
 }

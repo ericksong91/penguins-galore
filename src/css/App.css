@@ -2,10 +2,9 @@
   background-color:#d5ddce ;
   text-align: center;
   color:rgb(94, 76, 76);
-  width: 90em;
   position:relative;
   border-radius: 20px;
-  margin:auto;
+  margin:1rem;
 }
 
 .App-link {
@@ -16,10 +15,9 @@
   background-color:#d5ddce;
   text-align: center;
   color:rgb(94, 76, 76);
-  width: 90em;
   position:relative;
   border-radius: 20px;
-  margin:auto;
+  margin:1rem;
   margin-bottom:1rem;
   padding-bottom:1rem;
 }
@@ -28,26 +26,29 @@
   background-color:#d5ddce;
   text-align: center;
   color:rgb(94, 76, 76);
-  width: 90em;
   position:relative;
   border-radius: 20px;
-  margin:auto;
+  margin:1rem;
+}
+
+.home {
+  display: inline-grid;
+
 }
 
 .credits {
   background-color:#d5ddce;
   text-align: center;
   color:rgb(94, 76, 76);
-  width: 90em;
   position:relative;
   border-radius: 20px;
-  margin:auto;
+  margin:1rem;
 }
 
-/* .Links {
+.Links {
   background-color: rgba(33, 237, 255, 0.351);
-  width: 1em;
-  height: 2em;
+  /* width: 1em;
+  height: 2em; */
   display: inline-grid;
   margin: 0.3rem;
   justify-items: center;
@@ -56,4 +57,4 @@
   transition-property:background-color;
   transition-duration:0.5s;
   animation: append-animate .5s linear;
-} */
+}
