@@ -31,7 +31,8 @@
   justify-items: center;
   position:relative;
   border-radius: 20px;
-  transition-property:background-color;
+  opacity: 1;
+  transition-property:all;
   transition-duration:0.5s;
   animation: append-animate .5s linear;
 }

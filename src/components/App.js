@@ -1,7 +1,8 @@
-import React from "react";
+import { React, useEffect, useState } from "react";
 import "../App.css";
 import Homepage from "./Homepage";
 import PenguinList from "./PenguinsList";
+import PenguinPage from "./PenguinPage";
 import About from "./About";
 import {
   Routes,
@@ -9,11 +10,43 @@ import {
 } from "react-router-dom";
 
 function App() {
+  const [penguins, setPenguins] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:3001/penguins")
+      .then((r) => r.json())
+      .then((data) => setPenguins(data))
+      .catch(() => alert("Error grabbing penguins!"))
+  }, [])
+
+  function handleNewSubmit() {
+    console.log("Submitting new Penguins....")
+    fetch("http://localhost:3001/penguins")
+      .then((r) => r.json())
+      .then((data) => setPenguins(data))
+      .catch(() => alert("Error grabbing penguins!"))
+  }
+
+  function handleLikes(likedPenguin) {
+    console.log(likedPenguin)
+
+    const updatedPenguins = penguins.map((peng) => {
+      if (peng.id === likedPenguin.id) {
+        return likedPenguin;
+      } else {
+        return peng
+      }
+    })
+
+    setPenguins(updatedPenguins)
+  }
+
   return (
     <div className="App">
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/penguins" element={<PenguinList />} />
+        <Route exact path="/penguins/:id" element={<PenguinPage />} />
+        <Route path="/penguins" element={<PenguinList penguins={penguins} onSubmit={handleNewSubmit} onLiked={handleLikes} />} />
         <Route path="/about" element={<About />} />
       </Routes>
     </div>
