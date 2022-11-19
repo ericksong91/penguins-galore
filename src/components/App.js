@@ -45,7 +45,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route exact path="/penguins/:id" element={<PenguinPage penguins={penguins} />} />
+        <Route exact path="/penguins/:id" element={<PenguinPage penguins={penguins} onLiked={handleLikes} />} />
         <Route path="/penguins" element={<PenguinList penguins={penguins} onSubmit={handleNewSubmit} onLiked={handleLikes} />} />
         <Route path="/about" element={<About />} />
       </Routes>
