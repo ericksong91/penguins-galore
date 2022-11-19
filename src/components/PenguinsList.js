@@ -14,7 +14,7 @@ function PenguinList() {
         fetch("http://localhost:3001/penguins")
             .then((r) => r.json())
             .then((data) => setPenguins(data))
-            .catch(()=>alert("Error grabbing penguins!"))
+            .catch(() => alert("Error grabbing penguins!"))
     }, [])
 
     const penguinList = penguins.map((pen) => {
@@ -38,7 +38,7 @@ function PenguinList() {
     function handleLikes(likedPenguin) {
         console.log(likedPenguin)
 
-        const updatedPenguins = penguins.map((peng)=>{
+        const updatedPenguins = penguins.map((peng) => {
             if (peng.id === likedPenguin.id) {
                 return likedPenguin;
             } else {
@@ -51,9 +51,12 @@ function PenguinList() {
 
     //
 
-    function handleNewSubmit(newPenguin) {
+    function handleNewSubmit() {
         console.log("Submitting new Penguins....")
-        setPenguins([...penguins, newPenguin])
+        fetch("http://localhost:3001/penguins")
+            .then((r) => r.json())
+            .then((data) => setPenguins(data))
+            .catch(() => alert("Error grabbing penguins!"))
     }
 
     //
@@ -61,7 +64,7 @@ function PenguinList() {
     return (
         <div className="penguins">
             {newPeng ? <NewPenguin onSubmit={handleNewSubmit} /> : null}
-            <button onClick={handleShow}>{newPeng ? "Hide" : "Add New Penguins!"}</button>
+            <button onClick={handleShow}>{newPeng ? "Hide" : "Add New Penguin!"}</button>
             <br />
             {penguinList}
         </div>
