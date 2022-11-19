@@ -64,7 +64,7 @@ function PenguinList() {
     return (
         <div className="penguins">
             {newPeng ? <NewPenguin onSubmit={handleNewSubmit} /> : null}
-            <button onClick={handleShow}>{newPeng ? "Hide" : "Add New Penguin!"}</button>
+            <button onClick={handleShow} className="addPenguin">{newPeng ? "Hide" : "Add New Penguin!"}</button>
             <br />
             {penguinList}
         </div>

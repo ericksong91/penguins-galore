@@ -43,7 +43,7 @@ function NewPenguin({ onSubmit }) {
                             setName(e.target.value)
                         }} />
                     <Form.TextArea className="desc" placeholder="Description..."
-                        name="desc" value={desc} onChange={(e) => {
+                        name="desc" value={desc} maxLength={200} onChange={(e) => {
                             console.log(e.target.value)
                             setDesc(e.target.value)
                         }} />
