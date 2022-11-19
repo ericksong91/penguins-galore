@@ -1,9 +1,7 @@
 import React from "react";
 import penguinPic from "../images/Penguins_collage.png"
 import PenguinList from "./PenguinsList";
-import {
-  Link
-} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Homepage() {
   return (
