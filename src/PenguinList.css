@@ -58,6 +58,10 @@ button:hover {
   transition-duration: 0.5s;
 }
 
+.like {
+  background-color: rgba(172, 32, 32, 0.737);
+}
+
 .penguinsNew {
   justify-items: left;
 }

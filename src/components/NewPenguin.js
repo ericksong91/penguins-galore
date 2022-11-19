@@ -30,6 +30,7 @@ function NewPenguin({ onSubmit }) {
                 setImg("");
                 onSubmit(newPenguin);
             })
+            .catch(()=>alert("Error updating new Penguin!"))
     }
 
     return (
