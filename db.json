@@ -6,7 +6,7 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Aptenodytes_forsteri_-Snow_Hill_Island%2C_Antarctica_-adults_and_juvenile-8.jpg",
       "desc": "The emperor penguin is the tallest and heaviest of all living penguin species and is endemic to Antarctica.",
       "sciName": "Aptenodytes forsteri",
-      "liked": true
+      "liked": false
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Hope_Bay-2016-Trinity_Peninsula%E2%80%93Ad%C3%A9lie_penguin_%28Pygoscelis_adeliae%29_04.jpg/800px-Hope_Bay-2016-Trinity_Peninsula%E2%80%93Ad%C3%A9lie_penguin_%28Pygoscelis_adeliae%29_04.jpg",
       "desc": "The Adélie penguin is a species of penguin common along the entire coast of the Antarctic continent, which is the only place where it is found.",
       "sciName": "Pygoscelis adeliae",
-      "liked": true
+      "liked": false
     },
     {
       "id": 3,
@@ -47,14 +47,6 @@
       "desc": "The erect-crested penguin is a penguin endemic to the New Zealand region.",
       "sciName": "Eudyptes sclateri",
       "liked": false
-    },
-    {
-      "name": "Word",
-      "desc": "Description 5",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Aptenodytes_forsteri_-Snow_Hill_Island%2C_Antarctica_-adults_and_juvenile-8.jpg",
-      "sciName": "Word 2",
-      "liked": false,
-      "id": 7
     }
   ]
 }
