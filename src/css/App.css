@@ -11,15 +11,8 @@
   color: #61dafb;
 }
 
-.Navbar {
-  background-color:#d5ddce;
-  text-align: center;
-  color:rgb(94, 76, 76);
-  position:relative;
-  border-radius: 20px;
-  margin:1rem;
-  margin-bottom:1rem;
-  padding-bottom:1rem;
+.penguinHome {
+  width:30em
 }
 
 .header {
@@ -38,11 +31,6 @@ h1.pengHead {
   padding-bottom:0.5em;
 }
 
-.home {
-  display: inline-grid;
-
-}
-
 .credits {
   background-color:#d5ddce;
   text-align: center;
@@ -52,10 +40,31 @@ h1.pengHead {
   margin:1rem;
 }
 
+.Navbar {
+  background-color:#d5ddce;
+  text-align: center;
+  font-size: large;
+  color:rgb(94, 76, 76);
+  position:relative;
+  border-radius: 20px;
+  margin:1rem;
+  /* margin-bottom:1rem;
+  padding-bottom:1rem; */
+}
+
+a.Links:link { 
+  text-decoration: none; 
+}
+
+a.Links:hover { 
+  background-color: rgba(28, 127, 241, 0.351);
+}
+a.Links:active { 
+  text-decoration: underline; 
+}
+
 .Links {
   background-color: rgba(33, 237, 255, 0.351);
-  /* width: 1em;
-  height: 2em; */
   display: inline-grid;
   margin: 0.3rem;
   justify-items: center;

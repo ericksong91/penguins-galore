@@ -24,7 +24,7 @@ function PenguinPage({ penguins, onLiked }) {
         <div className="penguins">
             <h2 className="pageName">{name}</h2>
             <h3 className="pageSci">{sciName}</h3>
-            <div className="pageCard"><Link to="/penguins"><img src={image} className="pageImg"></img></Link></div>
+            <div className="pageCard"><Link to="/penguins"><img src={image} className="pageImg" alt={name}></img></Link></div>
             <p className="desc">{desc}</p>
             <button onClick={() => handleLikes()} className={liked ? "like" : null}>{liked ? "Liked! 😊" : "Like? 😀"}</button>
             <Link to="/penguins"><button>Return to Penguins</button></Link>

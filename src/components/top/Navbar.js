@@ -4,7 +4,6 @@ import { Link } from "react-router-dom"
 function Navbar() {
     return (
         <div className="Navbar">
-            <h3>Navigation</h3>
             <nav className="navLinks">
                 <Link className="Links" to="/" style={{ padding: 5 }}>
                     Home

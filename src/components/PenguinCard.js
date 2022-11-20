@@ -23,7 +23,7 @@ function PenguinCard({ name, id, img, liked, onLiked }) {
     return (
         <div className="card">
             <h2>{name}</h2>
-            <Link to={`/penguins/${id}`}><img className="cardImage" src={img} /></Link>
+            <Link to={`/penguins/${id}`}><img className="cardImage" src={img} alt={name} /></Link>
             <Link to={`/penguins/${id}`}><button>&#x1F9D0; More Details</button></Link>
             <button onClick={() => handleLikes()} className={liked ? "like" : null}>{liked ? "Liked! 😊" : "Like? 😀"}</button>
         </div>
