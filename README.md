@@ -2,7 +2,7 @@
 
 ## Description
 
-This simple application is designed to demonstrate a basic Single Page Application (SPA) using the React JS library. The data used for this project was taken from the Wikipedia page for [https://en.wikipedia.org/wiki/Penguin](penguins). The site features several components such as a navigation bar, ability to view penguins from a database and the ability to add new penguins. You can also "Like" penguins and the change will persist through reloads.
+This simple application is designed to demonstrate a basic Single Page Application (SPA) using the React JS library. The data used for this project was taken from the Wikipedia page for [penguins](https://en.wikipedia.org/wiki/Penguin). The site features several components such as a navigation bar, ability to view penguins from a database and the ability to add new penguins. You can also "Like" penguins and the change will persist through reloads.
 
 ## Usage
 
@@ -35,15 +35,15 @@ This simple application is designed to demonstrate a basic Single Page Applicati
 
 ## Credits  
 
-[https://en.wikipedia.org/wiki/Penguin](Wikipedia Page for Penguins)
+[Wikipedia Page for Penguins](https://en.wikipedia.org/wiki/Penguin )
 
 ## Author
 
 This application is by Eric Song who is currently studying the Flex program at Flatiron School.
 
-Github - https://github.com/ericksong91
+[Github](https://github.com/ericksong91)
 
-Linkedin - https://www.linkedin.com/in/eric-song-45597062
+[Linkedin](https://www.linkedin.com/in/eric-song-45597062)
 
 
 ## Contributing 
