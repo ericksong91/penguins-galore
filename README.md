@@ -10,13 +10,13 @@ This simple application is designed to demonstrate a basic Single Page Applicati
 
 2. Clicking on 'Click Here to See Penguins!' or the center image will take you to a list of penguins.
 
-3. Clicking on 'Like?' will allow the user to like a penguin. 
+3. Clicking on 'Like?' will allow the user to like a penguin and Vise Versa. 
 
 4. Clicking on 'More Details' or the image of the corresponding penguin will take you to a description page.
 
 5. The description page has a short description about the penguin as well as its scientific/latin name.
 
-6. Clicking the image or 'Return to Penguins' will take you back to the list of penguins. Clicking on 'Like?' will allow you to like the penguin.
+6. Clicking the image or 'Return to Penguins' will take you back to the list of penguins. Clicking on 'Like?' will allow you to like the penguin and Vise Versa.
 
 7. The navigation bar above will take you back to the homepage, the penguins list, or the about me page for the app author.
 
