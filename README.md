@@ -2,11 +2,11 @@
 
 ## Description
 
-TBD
+This simple application is designed to demonstrate a basic Single Page Application (SPA) using the React JS library. The data used for this project was taken from the Wikipedia page for [https://en.wikipedia.org/wiki/Penguin](penguins). The site features several components such as a navigation bar, ability to view penguins from a database and the ability to add new penguins. You can also "Like" penguins and the change will persist through reloads.
 
 ## Usage
 
-1. TBD
+1. 
 
 ![Usage](URL HERE)
 
