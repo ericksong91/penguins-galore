@@ -18,7 +18,11 @@ This simple application is designed to demonstrate a basic Single Page Applicati
 
 6. Clicking the image or 'Return to Penguins' will take you back to the list of penguins. Clicking on 'Like?' will allow you to like the penguin and Vise Versa.
 
-7. The navigation bar above will take you back to the homepage, the penguins list, or the about me page for the app author.
+7. Clicking on 'Add New Penguin' at the top of the list of penguins will allow you to add a new penguin. The user is able to enter the name, the scientific/latin name, a short 200 character description of the penguin and finally an image URL of the penguin.
+
+8. Clicking 'Hide' will hide the form from the user again.
+
+9. The navigation bar above will take you back to the homepage, the penguins list, or the about me page for the app author.
 
 ![Usage](./src/images/penguinsgalore1.gif)
 
