@@ -6,22 +6,36 @@ This simple application is designed to demonstrate a basic Single Page Applicati
 
 ## Usage
 
-1. 
+1. Open the App and you will be greeted by a home page
 
-![Usage](URL HERE)
+2. Clicking on 'Click Here to See Penguins!' or the center image will take you to a list of penguins.
 
-![Usage](URL HERE)
+3. Clicking on 'Like?' will allow the user to like a penguin. 
+
+4. Clicking on 'More Details' or the image of the corresponding penguin will take you to a description page.
+
+5. The description page has a short description about the penguin as well as its scientific/latin name.
+
+6. Clicking the image or 'Return to Penguins' will take you back to the list of penguins. Clicking on 'Like?' will allow you to like the penguin.
+
+7. The navigation bar above will take you back to the homepage, the penguins list, or the about me page for the app author.
+
+![Usage](./src/images/penguinsgalore1.gif)
+
+![Usage](./src/images/penguinsgalore2.gif)
 
 
 ## Project Status
 
-11/17/22 - Building Site
+11/21/22 - Version 0.1 completed.
 
 ## Planned Features
 
+1. Ability to search for specific penguins
 
 ## Credits  
 
+[https://en.wikipedia.org/wiki/Penguin](Wikipedia Page for Penguins)
 
 ## Author
 
