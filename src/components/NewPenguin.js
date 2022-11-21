@@ -26,12 +26,12 @@ function NewPenguin({ onSubmit }) {
             body: JSON.stringify(newPenguin),
         })
             .then((r) => r.json())
-            .then(() => {
+            .then((data) => {
                 setName("");
                 setDesc("");
                 setImg("");
                 setSciName("");
-                onSubmit(newPenguin);
+                onSubmit(data);
             })
             .catch(() => alert("Error updating new Penguin!"))
     }

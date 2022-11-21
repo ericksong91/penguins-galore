@@ -20,12 +20,9 @@ function App() {
       .catch(() => alert("Error grabbing penguins!"))
   }, [])
 
-  function handleNewSubmit() {
-    console.log("Submitting new Penguins....")
-    fetch("http://localhost:3001/penguins")
-      .then((r) => r.json())
-      .then((data) => setPenguins(data))
-      .catch(() => alert("Error grabbing penguins!"))
+  function handleNewSubmit(data) {
+    console.log("Submitting new Penguins....");
+    setPenguins([...penguins, data]);
   }
 
   function handleLikes(likedPenguin) {
