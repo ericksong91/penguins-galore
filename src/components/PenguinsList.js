@@ -21,7 +21,6 @@ function PenguinList({ penguins, onSubmit, onLiked }) {
 
     return (
         <div className="penguins">
-            
             {newPeng ? <NewPenguin onSubmit={onSubmit} /> : null}
             <button onClick={handleShow} className="addPenguin">{newPeng ? "Hide" : "Add New Penguin!"}</button>
             <br />
