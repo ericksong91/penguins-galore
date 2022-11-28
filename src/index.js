@@ -7,7 +7,7 @@ import Navbar from './components/top/Navbar';
 import Credits from './components/top/Credits';
 import reportWebVitals from './reportWebVitals';
 import {
-  BrowserRouter as Router, Routes,
+  BrowserRouter as Router
 } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
