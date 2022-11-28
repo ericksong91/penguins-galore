@@ -41,8 +41,8 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/penguins/" element={<PenguinList penguins={penguins} onSubmit={handleNewSubmit} onLiked={handleLikes} />} />
-        <Route path="/about" element={<About />} />
+        <Route path="penguins" element={<PenguinList penguins={penguins} onSubmit={handleNewSubmit} onLiked={handleLikes} />} />
+        <Route path="about" element={<About />} />
         <Route path="/penguins/:id" element={<PenguinPage penguins={penguins} onLiked={handleLikes} />} />
       </Routes>
     </div>

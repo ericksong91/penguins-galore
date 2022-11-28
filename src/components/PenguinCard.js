@@ -5,7 +5,7 @@ import {
 
 function PenguinCard({ name, id, img, liked, onLiked }) {
 
-    function handleLikes () {
+    function handleLikes() {
         fetch(`http://localhost:3001/penguins/${id}`, {
             method: "PATCH",
             headers: {
@@ -15,9 +15,9 @@ function PenguinCard({ name, id, img, liked, onLiked }) {
                 "liked": !liked,
             }),
         })
-        .then((r)=>r.json())
-        .then((data)=>onLiked(data))
-        .catch(()=>alert("Error updating likes!"))
+            .then((r) => r.json())
+            .then((data) => onLiked(data))
+            .catch(() => alert("Error updating likes!"))
     }
 
     return (
@@ -26,7 +26,7 @@ function PenguinCard({ name, id, img, liked, onLiked }) {
             <Link to={`/penguins/${id}`}><img className="cardImage" src={img} alt={name} /></Link>
             <Link to={`/penguins/${id}`}><button>&#x1F9D0; More Details</button></Link>
             <button onClick={() => handleLikes()} className={liked ? "like" : null}>{liked ? "Liked! 😊" : "Like? 😀"}</button>
-            <br/>
+            <br />
         </div>
     );
 }
